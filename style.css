@@ -1,0 +1,92 @@
+*{  
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    border-bottom: 1px solid white;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 100%;
+}
+
+#game {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    margin: 0.4rem 0 0.4rem 0;
+}
+
+#board-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 8px;
+    padding: 30px;
+}
+
+.square {
+    border: 1px solid lightslategrey;
+    height: 60px;
+    width: 60px;
+    color: white;
+    font-size: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#keyboard-container{
+    height: 300x;
+}
+
+.keyboard-row{
+    display: flex;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+}
+
+.keyboard-row button{
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 10px;
+    height: 58px;
+    cursor: pointer;
+    background-color: lightslategrey;
+    color: white;
+    flex-grow: 1;
+    width: 10px;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.keyboard-row button.wide-button{
+    width: 45px !important;
+}
