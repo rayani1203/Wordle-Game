@@ -233,16 +233,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         guessedCount += 1;
 
                         //Check win/loss conditions
-                        if(word == currentWord){
-                            window.alert('Congratulations, you got the word! Reload to play again.');
-                        }
-                        else if(guessedWords.length == 6){
+                        if((guessedWords.length == 6) && (word != currentWord)){
                             window.alert('Sorry, you are out of guesses. The word was ' + word);
                         }                
 
                         //Move guessed word array to next word
                         guessedWords.push([]);
-                        
                         //Reset current guessed word indexes
                         guessedIndex = [];
                         otherGuessedIndex = [];
