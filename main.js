@@ -232,9 +232,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         
                         guessedCount += 1;
 
-                        if(guessedWords.length == 6){
+                        if((guessedWords.length == 6) && (word != currentWord)){
                             window.alert('Sorry, you are out of guesses. The word was ' + word);
-                        }
+                        }                
 
                         guessedWords.push([]);
                         guessedIndex = [];

@@ -46,13 +46,13 @@ header{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 8px;
-    padding: 30px;
+    padding: 22px;
 }
 
 .square {
     border: 1px solid lightslategrey;
-    height: 60px;
-    width: 60px;
+    height: 55px;
+    width: 55px;
     color: white;
     font-size: 44px;
     display: flex;
@@ -76,7 +76,7 @@ header{
     font-weight: bold;
     border: 0;
     padding: 10px;
-    height: 58px;
+    height: 56px;
     cursor: pointer;
     background-color: lightslategrey;
     color: white;
