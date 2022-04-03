@@ -106,11 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 letterEl.classList.remove("animate__shakeX");
             }, 200);
         });
-
-        if(word === currentWord){
-            window.alert('Congratulations, you got it!');
-            location.reload();
-        }
     }
 
     //When submitting word, check what color a given tile should be
@@ -247,6 +242,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         //Reset current guessed word indexes
                         guessedIndex = [];
                         otherGuessedIndex = [];
+                    }
+                    if(word === (currentWord)){
+                        window.alert('Congratulations, you got it! Click anywhere to play again.');
+                        document.onclick = function reloader() {
+                            location.reload();
+                        }
                     }
                 })
                 .catch(err => console.error(err));        
