@@ -106,6 +106,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 letterEl.classList.remove("animate__shakeX");
             }, 200);
         });
+
+        if(word === currentWord){
+            window.alert('Congratulations, you got it!');
+            location.reload();
+        }
     }
 
     //When submitting word, check what color a given tile should be
