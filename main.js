@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 method: 'GET',
                 headers: {
                     'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com',
-                    'X-RapidAPI-Key': 'ee5e024ab6msh71f4f531a538e68p1174c4jsnc13e383f05b4'
+                    'X-RapidAPI-Key': TOKEN
                 }
             };
             
